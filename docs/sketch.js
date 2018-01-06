@@ -29,8 +29,7 @@ function draw(){
     renderStars();
     
     game.earth.show();
-    var posx = game.earth.pos.x;
-    image(img,posx,height);
+    image(img,width/2,height);
     game.shoot(x,y,bulletNr);
     
     game.cleanBullets();
