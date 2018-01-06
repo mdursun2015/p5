@@ -28,8 +28,9 @@ function draw(){
  
     renderStars();
     
-<<<<<<< HEAD
+
     image(img,width/2-30,height-30);
+
     game.shoot(x,y,bulletNr);
     
     game.cleanBullets();
