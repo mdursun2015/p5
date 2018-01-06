@@ -4,8 +4,11 @@ var bulletNr=0;
 var game;
 var stars =[];
 var bulletCount;
+var img;
 
-
+function preload(){
+    img=loadImage('earth.png');
+}
 
 function setup() {
     createCanvas(400,300);
@@ -26,6 +29,8 @@ function draw(){
     renderStars();
     
     game.earth.show();
+    var posx = game.earth.pos.x;
+    image(img,posx,height);
     game.shoot(x,y,bulletNr);
     
     game.cleanBullets();
